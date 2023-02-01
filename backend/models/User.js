@@ -33,6 +33,7 @@ var UserSchema = new mongoose.Schema(
       type: Boolean,
       default: false
     },
+    
     favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: "Item" }],
     following: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     hash: String,
